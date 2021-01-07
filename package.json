@@ -1,7 +1,7 @@
 {
     "name": "hepro",
     "version": "1.2.0",
-    "description": "Hepro - React Next IT & SaaS Template",
+    "description": "Make My App. We create your app",
     "main": "index.js",
     "scripts": {
         "dev": "next",

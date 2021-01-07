@@ -32,9 +32,9 @@ export default class MyApp extends App {
                 <Head>
                     <title>Make-My-App Mobile Agency</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                    <meta name="description" content="Hepro - React Next IT & SaaS Template" />
-                    <meta name="og:title" property="og:title" content="Hepro - React Next IT & SaaS Template"></meta>
-                    <meta name="twitter:card" content="Hepro - React Next IT & SaaS Template"></meta>
+                    <meta name="description" content="Make My App. We create your app" />
+                    <meta name="og:title" property="og:title" content="Make My App. We create your app"></meta>
+                    <meta name="twitter:card" content="Make My App. We create your app"></meta>
                     <link rel="canonical" href="https://make-my-app.com/"></link>
                 </Head>
 
