@@ -43,7 +43,7 @@ class NavbarTwo extends Component {
                             <nav className="navbar navbar-expand-md navbar-light">
                                 <Link href="/">
                                     <a className="navbar-brand">
-                                    <img style={{aspectRatio: 1}} width={120} src="https://i.ibb.co/wYHsnzY/1.png" alt="logo" />
+                                    <img style={{aspectRatio: 1}} width={100} src="https://i.ibb.co/nb3Ww3s/6.png" alt="logo" />
                                     </a>
                                 </Link>
 
