@@ -14,6 +14,7 @@ import BlogPostStyleOne from '../components/Common/BlogPostStyleOne';
 import SubscribeStyleTwo from '../components/Common/SubscribeStyleTwo';
 import FreeTrialArea from '../components/Common/FreeTrialArea';
 import Footer from '../components/Layouts/Footer';
+import ContactFormArea from '../components/Contact/ContactFormArea';
 
 class Index3 extends Component {
     render() {
@@ -32,6 +33,7 @@ class Index3 extends Component {
                 {/* <DownloadApp /> */}
                 {/* <BlogPostStyleOne /> */}
                 <SubscribeStyleTwo />
+                <ContactFormArea />
                 <FreeTrialArea />
                 <Footer />
             </React.Fragment>
