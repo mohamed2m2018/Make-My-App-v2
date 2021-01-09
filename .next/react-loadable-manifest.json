@@ -5,6 +5,12 @@
       "file": "static/chunks/0.js"
     }
   ],
+  "react-facebook-pixel": [
+    {
+      "id": "./node_modules/react-facebook-pixel/dist/fb-pixel.js",
+      "file": "static/chunks/2.js"
+    }
+  ],
   "react-owl-carousel3": [
     {
       "id": "./node_modules/react-owl-carousel3/lib/OwlCarousel.js",

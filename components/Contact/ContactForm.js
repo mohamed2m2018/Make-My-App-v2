@@ -1,16 +1,29 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import emailjs from 'emailjs-com'
 import { CircularProgress } from '@material-ui/core'
-import { Alert, AlertTitle } from '@material-ui/lab'
+import { Alert } from '@material-ui/lab'
+
 
 const ContactForm = () => {
   const { handleSubmit, register, setValue } = useForm()
   const [loading, setloading] = useState()
   const [success, setSuccess] = useState(null)
+  const options = {
+    autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+    debug: false, // enable logs
+  };
+
+   const trackevent = async ({name, email, phone_number, msg_subject, message}) => {
+    const { default: ReactPixel } = await import('react-facebook-pixel')
+    ReactPixel.init('1330647617290758', undefined, options)
+    ReactPixel.pageView()
+    ReactPixel.trackCustom('contact click', {name, email, phone_number, message, msg_subject})
+  };
 
   const onsubmit = values => {
     const { name, email, phone_number, msg_subject, message } = values
+    trackevent(values)
     setloading(true)
     emailjs
       .send(
